@@ -1,0 +1,23 @@
+# Executable
+regexer
+
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+
+# Debug files
+*.dSYM/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Prerequisites
+*.d
+
+# Temp files
+*~
+.*.swp
