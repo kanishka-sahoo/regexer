@@ -1,3 +1,16 @@
+/**
+ * @file main.c
+ * @brief Example DFA implementation recognizing the pattern "ab*a"
+ * 
+ * This example creates a DFA that accepts strings that:
+ * 1. Start with 'a'
+ * 2. Have zero or more 'b' characters
+ * 3. End with 'a'
+ * 
+ * Examples of accepted strings: "aa", "aba", "abba", "abbba"
+ * Examples of rejected strings: "a", "ab", "b", "ba"
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "dfa.h"

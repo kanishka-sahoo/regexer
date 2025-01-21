@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+/** Maximum input string length to prevent buffer overruns */
 #define MAX_STRING_LENGTH 1024
+
+/** Maximum number of nodes in DFA to prevent infinite recursion */
 #define MAX_NODES 256
 
 DFANode* createDFANode(bool isLast) {
@@ -28,6 +31,12 @@ void freeDFANode(DFANode* node) {
     }
 }
 
+/**
+ * @brief Helper function for recursive DFA cleanup
+ * @param node Current node being processed
+ * @param visited Array of already visited nodes
+ * @param visitedCount Pointer to count of visited nodes
+ */
 static void freeDFARecursive(DFANode* node, DFANode** visited, int* visitedCount) {
     if (!node || *visitedCount >= MAX_NODES) return;
     
