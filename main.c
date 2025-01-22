@@ -88,6 +88,8 @@ int main(int argc, char **argv) {
     int convRes = solveDFA(argv[1], dfaAbStarC);
     printf("Converted NFA for ab*c: %s\n",
            (convRes == 1) ? "accepted" : "rejected");
+    
+    printf("Github Test\n");
 
     // Clean up
     freeNFA(abStarC1);
