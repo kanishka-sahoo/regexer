@@ -36,4 +36,4 @@ test: $(TESTS)
 
 .PHONY: clean
 clean:
-	rm -f $(TARGET) $(OBJS)
+	rm -f $(TARGET) $(OBJS) tests/test_dfa tests/test_nfa tests/test_converter

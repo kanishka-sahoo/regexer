@@ -1,5 +1,8 @@
-# Executable
+# Executables
 regexer
+tests/test_dfa
+tests/test_nfa
+tests/test_converter
 
 # Object files
 *.o
